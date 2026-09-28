@@ -62,8 +62,8 @@ class ArmNoneEabiGccAT9 < Formula
           --prefix=/
           --target=arm-none-eabi
           --enable-languages=c
-          --with-ld=#{Formula["arm-none-eabi-binutils"].opt_bin / "arm-none-eabi-ld"}
-          --with-as=#{Formula["arm-none-eabi-binutils"].opt_bin / "arm-none-eabi-as"}
+          --with-ld=#{formula_opt_bin("arm-none-eabi-binutils") / "arm-none-eabi-ld"}
+          --with-as=#{formula_opt_bin("arm-none-eabi-binutils") / "arm-none-eabi-as"}
           --disable-nls
           --disable-libssp
           --disable-shared
@@ -174,8 +174,8 @@ class ArmNoneEabiGccAT9 < Formula
 
       --enable-languages=#{languages.join(",")}
 
-      --with-ld=#{Formula["arm-none-eabi-binutils"].opt_bin / "arm-none-eabi-ld"}
-      --with-as=#{Formula["arm-none-eabi-binutils"].opt_bin / "arm-none-eabi-as"}
+      --with-ld=#{formula_opt_bin("arm-none-eabi-binutils") / "arm-none-eabi-ld"}
+      --with-as=#{formula_opt_bin("arm-none-eabi-binutils") / "arm-none-eabi-as"}
 
       --enable-plugins
       --disable-decimal-float
