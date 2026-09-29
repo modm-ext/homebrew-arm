@@ -24,6 +24,8 @@ class ArmNoneEabiGccAT8 < Formula
            "This is useful if you want to have multiple version of arm-none-eabi-gcc\n" \
            "installed on the same machine"
 
+  deprecate! date: "2026-09-29", because: "is superseded by the prebuilt arm-gcc-bin formulae"
+
   depends_on "gmp"
   depends_on "isl"
   depends_on "libmpc"
